@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainPageContentComponent } from './main-page-content.component';
+import { HighlightComponent } from './highlight.component';
 
-describe('MainPageContentComponent', () => {
-  let component: MainPageContentComponent;
-  let fixture: ComponentFixture<MainPageContentComponent>;
+describe('HighlightComponent', () => {
+  let component: HighlightComponent;
+  let fixture: ComponentFixture<HighlightComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MainPageContentComponent ]
+      declarations: [ HighlightComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MainPageContentComponent);
+    fixture = TestBed.createComponent(HighlightComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
