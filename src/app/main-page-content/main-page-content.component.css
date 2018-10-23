@@ -1,0 +1,15 @@
+.bottom p
+{
+    color: black;
+}
+
+.bottom {
+    text-align: center;
+    margin-right: 10em;
+    margin-left: 10em;
+    margin-top: 5em;
+  }
+
+.logo {
+    size: 30%;
+}

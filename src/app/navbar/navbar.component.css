@@ -17,7 +17,7 @@
     background-color: transparent
 }
 
-.main-img {
+#main-img {
     width: 70%;
     margin-left: 2em;
 }
@@ -49,18 +49,3 @@
     color: white;
 }
 
-.bottom p
-{
-    color: black;
-}
-
-.bottom {
-    text-align: center;
-    margin-right: 10em;
-    margin-left: 10em;
-    margin-top: 5em;
-  }
-
-.logo {
-    size: 30%;
-}
