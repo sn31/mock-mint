@@ -34,7 +34,7 @@ img {
     padding-top: 1em;
 }
 
-.landing-page {
+.main-text-box {
     text-align: center;
     display: table;
     margin-right: auto;
@@ -45,6 +45,18 @@ img {
     background-color: rgba(47, 143, 130, 0.8);
   }
 
-.landing-page h3, p {
+.main-text-box h3, p {
     color: white;
 }
+
+.bottom p
+{
+    color: black;
+}
+
+.bottom {
+    text-align: center;
+    margin-right: 10em;
+    margin-left: 10em;
+    margin-top: 5em;
+  }
