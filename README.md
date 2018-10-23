@@ -10,7 +10,21 @@ The goal of this project is to rebuil a website using Angular with the following
 
 * The project must utilize a database.
 
-## Specifications
+## Project Planning and Specifications
+
+The website should includes a landing page, an authentication page and a main page where the user can manage their financials.
+
+### Week 1 Goals
+
+* Create landing page
+
+* Create authentication component
+
+### Week 2 Goals
+
+* Finish adding features
+
+### Specifications
 
 * The user should be able to sign up for a new account.
 * The user should be able to sign in to an existing account.
