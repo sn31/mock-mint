@@ -6,12 +6,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {NgxPageScrollModule} from 'ngx-page-scroll';
 
 import { HighlightComponent } from './highlight/highlight.component';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HighlightComponent
+    HighlightComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
