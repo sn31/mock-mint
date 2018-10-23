@@ -17,7 +17,7 @@
     background-color: transparent
 }
 
-img {
+.main-img {
     width: 70%;
     margin-left: 2em;
 }
@@ -60,3 +60,7 @@ img {
     margin-left: 10em;
     margin-top: 5em;
   }
+
+.logo {
+    size: 30%;
+}
