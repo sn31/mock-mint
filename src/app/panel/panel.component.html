@@ -1,17 +1,11 @@
-<div class="row panel">
+
+<div *ngFor="let panel of childPanelList" class="row panel">
   <div class="col-md-5 text">
-    <h3>Effortlessly stay on top of bills</h3>
-    <p>At last, your bills and money are together in one place and easier than ever to track. Just add your bills to see how
-      helpful we can be.
-    </p>
-    <ul>
-      <li>See bills and money in one place.</li>
-      <li>Get alerts about upcoming bills.</li>
-      <li>Say goodbye to late fees.</li>
-    </ul>
+    <h3>{{panel.title}}</h3>
+    <p>{{panel.detail}}
     <a href="#">Learn More</a>
   </div>
   <div class="cold-md-7 picture">
-    <img id="panel" alt="Panel Picture" src="../assets/img/panel-pic.png">
+    <img id="panel" alt="Panel Picture" src={{panel.img}}>
   </div>
 </div>
