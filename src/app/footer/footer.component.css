@@ -1,0 +1,31 @@
+.footer-download img {
+  height: 5vh;
+  margin-bottom: 1em;
+}
+.footer-info img {
+  height: 3vh;
+  margin-bottom: 0.5em;
+}
+.footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+hr {
+  border-color: rgba(206, 197, 197, 0.699);
+}
+.small-text {
+  font-size: 0.8em;
+}
+
+.footer-info {
+  margin-bottom: 2em;
+}
+
+.col-md-1 {
+  padding-left: 0;
+  padding-right: 0;
+  width: 2em;
+}

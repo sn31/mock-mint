@@ -7,13 +7,15 @@ import {NgxPageScrollModule} from 'ngx-page-scroll';
 
 import { HighlightComponent } from './highlight/highlight.component';
 import { PanelComponent } from './panel/panel.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HighlightComponent,
-    PanelComponent
+    PanelComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
