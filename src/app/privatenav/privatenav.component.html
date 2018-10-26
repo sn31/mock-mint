@@ -1,16 +1,21 @@
 <div class="wrapper">
-  <div class="row">
-    <div class="col-md-2">
+  <div class="row top">
+    <div class="col-md-3">
       <img id="main-img" width="300" alt="Angular Logo" src="../assets/img/dark-logo.png">
     </div>
-    <div class="col-md-8">
+    <div class="col-md-9">
       <nav class="topnav" routerLinkActive="active">
         <a *ngFor="let section of sections" class="nav-link" href="{{section.route}}">{{section.title | uppercase}}</a>
+        <a class="btn btn-info" (click)="logout()">Log out</a>
       </nav>
     </div>
-    <div class="col-md-2">
-      <a>{{userName}}</a>
-      <button class="btn btn-info" (click)="logout()">Log out</button>
+  </div>
+  <div class="row bottom">
+    <div class="col-md-2"></div>
+    <div class="col-md-10">
+      <nav class="bottomnav" routerLinkActive="active">
+        <a *ngFor="let subsection of subsections" class="nav-link" href="{{subsection.route}}">{{subsection.title | uppercase}}</a>
+      </nav>
     </div>
   </div>
 

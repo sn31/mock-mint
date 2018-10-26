@@ -2,16 +2,23 @@
 .topnav {
     overflow: hidden;
     padding-left: 24%;
-    padding-right: 20%;
+    padding-right: 15%;
+    float:right;
 }
-
-.topnav a {
+.bottomnav, .bottom{
+    overflow: hidden;
+    background-color: aliceblue;
+}
+.topnav a, .bottomnav a {
     float: left;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     text-decoration: none;
     font-size: 16px;
     color: white;
+}
+.bottomnav a {
+    color: #333;
 }
 .col-md-2 a {
     color: white;
@@ -21,12 +28,13 @@
 }
 
 #main-img {
-    width: 80%;
+    width: 40%;
     margin-left: 2em;
 }
 
 .row {
     padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .wrapper{
