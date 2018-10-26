@@ -10,6 +10,7 @@ import { PanelComponent } from './panel/panel.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { routing } from './app.routing';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { routing } from './app.routing';
     HighlightComponent,
     PanelComponent,
     FooterComponent,
-    HomepageComponent
+    HomepageComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
