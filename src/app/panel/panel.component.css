@@ -1,15 +1,16 @@
 .panel
 {
    margin-top: 3em;
-   margin-bottom: 3em;
+   margin-bottom: 3.1em;
    
    height: 60vh;
-   background-color: rgb(204, 165, 172);
+   /* background-color: rgb(204, 165, 172); */
 }
 
 #panel{
     height: 80%;
     margin-top: 20%;
+    display: inline-block;
 }
 
 .text {
@@ -18,4 +19,8 @@
 
 .picture {
     margin-right: auto;
+}
+
+.special {
+    background-color: rgba(197, 108, 108, 0.377);
 }

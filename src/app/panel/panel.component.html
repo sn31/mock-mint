@@ -1,8 +1,7 @@
-
-<div *ngFor="let panel of childPanelList" class="row panel">
+<div *ngFor="let panel of childPanelList" class="row panel" [ngClass]="{special: panel.title ==='Personalized for you'}" >
   <div class="col-md-5 text">
-    <h3>{{panel.title}}</h3>
-    <p>{{panel.detail}}
+    <h3><strong>{{panel.title}}</strong></h3>
+    <p>{{panel.detail}}</p>
     <a href="#">Learn More</a>
   </div>
   <div class="cold-md-7 picture">
