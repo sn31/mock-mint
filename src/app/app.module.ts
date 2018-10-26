@@ -8,6 +8,8 @@ import {NgxPageScrollModule} from 'ngx-page-scroll';
 import { HighlightComponent } from './highlight/highlight.component';
 import { PanelComponent } from './panel/panel.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -15,11 +17,13 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     HighlightComponent,
     PanelComponent,
-    FooterComponent
+    FooterComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
-    NgxPageScrollModule
+    NgxPageScrollModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
