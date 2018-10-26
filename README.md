@@ -6,9 +6,9 @@ By Epicodus Independent Project - Advanced JavaScript Week 3 & 4 - 10/26/2018.
 
 The goal of this project is to rebuil a website using Angular with the following criteria:
 
-* The site can be divided into multiple components.
+- The site can be divided into multiple components.
 
-* The project must utilize a database.
+- The project must utilize a database.
 
 ## Project Planning and Specifications
 
@@ -16,27 +16,27 @@ The website should includes a landing page, an authentication page and a main pa
 
 ### Week 1 Goals
 
-* Create home page
+- Create home page
 
-* Create authentication component
+- Create authentication component
 
 ### Week 2 Goals
 
-* Finish adding features
+- Finish adding features
 
 ### Specifications
 
-* The user should be able to sign up for a new account.
-* The user should be able to sign in to an existing account.
-* The user should be able to view the balance on all connected accounts.
-* The user should be able to view spending trends.
-* The user should see a list of transactions.
+- The user should be able to sign up for a new account.
+- The user should be able to sign in to an existing account.
+- The user should be able to view the balance on all connected accounts.
+- The user should be able to view spending trends.
+- The user should see a list of transactions.
 
 ### Completed Features
 
-* Home page
-* User authentication using Firebase Google Auth.
-* Pulic and Private routes are protected with Redirect.
+- Home page
+- User authentication using Firebase Google Auth.
+- Pulic and Private routes are protected with Redirect.
 
 ## Setup/Installation Requirements
 
@@ -63,19 +63,20 @@ Please contact us at skye@dames.es for more information and/or feedback.
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Known Bugs
-* Images on the home page panels automatically resize to 100% when a change is made to the project. 
-     - Attempted fix: Move the panel component stylings to styles.css.
-     - Current fix: refresh the browser. 
+
+- Images on the home page panels automatically resize to 100% when a change is made to the project.
+  - Attempted fix: Move the panel component stylings to styles.css.
+  - Current fix: refresh the browser.
 
 ## Technologies Used
 
-* TypeScript
-* JavaScript
-* NodeJs
-* Homebrew
-* Angular CLI 1.6.5
-* Git
-* GitHub
+- TypeScript
+- JavaScript
+- NodeJs
+- Homebrew
+- Angular CLI 1.6.5
+- Git
+- GitHub
 
 ### License: MIT
 

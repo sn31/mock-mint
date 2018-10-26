@@ -10,15 +10,18 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
+    color: white;
 }
-
+.col-md-2 a {
+    color: white;
+}
 .topnav a:hover {
     background-color: transparent
 }
 
 #main-img {
-    width: 70%;
+    width: 80%;
     margin-left: 2em;
 }
 
@@ -26,3 +29,7 @@
     padding-top: 1em;
 }
 
+.wrapper{
+    background-color:#333;
+    
+}

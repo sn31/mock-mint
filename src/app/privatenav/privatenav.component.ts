@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from "../authentication.service";
+import {Section} from "../models/privatenav-model";
 @Component({
   selector: 'app-privatenav',
   templateUrl: './privatenav.component.html',
@@ -28,4 +29,9 @@ export class PrivatenavComponent implements OnInit {
   logout() {
     this.authService.logout();
   }
-}
+  sections: Section[] = [
+    new Section('add accounts',''),
+    new Section('settings',''),
+    new Section('profile',''),
+    new Section('tour','')
+  ]}
