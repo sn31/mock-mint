@@ -23,6 +23,7 @@ The website should includes a landing page, an authentication page and a main pa
 ### Week 2 Goals
 
 - Finish adding features
+- Use Firebase database
 
 ### Specifications
 
@@ -35,8 +36,9 @@ The website should includes a landing page, an authentication page and a main pa
 ### Completed Features
 
 - Home page
+- Private Overview Page
 - User authentication using Firebase Google Auth.
-- Pulic and Private routes are protected with Redirect.
+- Public and Private routes are protected with Redirect.
 
 ## Setup/Installation Requirements
 
