@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Account} from '../models/account-model';
 @Component({
   selector: 'app-overview',
   templateUrl: './overview.component.html',
@@ -17,4 +17,7 @@ export class OverviewComponent implements OnInit {
   day: number = this.currentTime.getDate();
   year: number = this.currentTime.getFullYear();
   
+  newAccount = new Account(
+    10000,10000,-40000,135000,35000
+  )
 }
