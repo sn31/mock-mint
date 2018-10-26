@@ -35,7 +35,8 @@ The website should includes a landing page, an authentication page and a main pa
 ### Completed Features
 
 * Home page
-* Routing between home page and other pages (login, sign up, etc.)
+* User authentication using Firebase Google Auth.
+* Pulic and Private routes are protected with Redirect.
 
 ## Setup/Installation Requirements
 
@@ -60,6 +61,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 Please contact us at skye@dames.es for more information and/or feedback.
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Known Bugs
+* Images on the home page panels automatically resize to 100% when a change is made to the project. 
+     - Attempted fix: Move the panel component stylings to styles.css.
+     - Current fix: refresh the browser. 
 
 ## Technologies Used
 
