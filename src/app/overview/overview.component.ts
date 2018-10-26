@@ -12,5 +12,9 @@ export class OverviewComponent implements OnInit {
   ngOnInit() {
    
   }
+  currentTime = new Date();
+  month: number = this.currentTime.getMonth() + 1;
+  day: number = this.currentTime.getDate();
+  year: number = this.currentTime.getFullYear();
   
 }
