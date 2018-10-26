@@ -11,13 +11,14 @@ import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { routing } from './app.routing';
 import { LoginComponent } from './login/login.component';
-import { OverviewComponent } from './overview/overview.component';
+
 import { HttpModule } from '@angular/http';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { masterFirebaseConfig } from './api-keys';
+import { PrivateComponent } from './private/private.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -36,7 +37,8 @@ export const firebaseConfig = {
     FooterComponent,
     HomepageComponent,
     LoginComponent,
-    OverviewComponent
+  
+    PrivateComponent
   ],
   imports: [
     BrowserModule,

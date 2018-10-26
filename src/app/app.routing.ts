@@ -1,20 +1,16 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {HomepageComponent} from '../app/homepage/homepage.component';
-import {LoginComponent} from '../app/login/login.component';
-import {OverviewComponent} from '../app/overview/overview.component';
+import {PrivateComponent} from '../app/private/private.component';
 const appRoutes: Routes = [
     {
       path: '',
-      component: HomepageComponent
+      component: HomepageComponent //public component
     },
+   
     {
-        path: 'login',
-        component: LoginComponent
-    },
-    {
-        path: 'overview',
-        component: OverviewComponent
+        path: 'private',
+        component: PrivateComponent
     }
   ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
