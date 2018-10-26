@@ -16,7 +16,7 @@ The website should includes a landing page, an authentication page and a main pa
 
 ### Week 1 Goals
 
-* Create landing page
+* Create home page
 
 * Create authentication component
 
@@ -31,6 +31,11 @@ The website should includes a landing page, an authentication page and a main pa
 * The user should be able to view the balance on all connected accounts.
 * The user should be able to view spending trends.
 * The user should see a list of transactions.
+
+### Completed Features
+
+* Home page
+* Routing between home page and other pages (login, sign up, etc.)
 
 ## Setup/Installation Requirements
 
