@@ -1,0 +1,28 @@
+
+.topnav {
+    overflow: hidden;
+    padding-left: 24%;
+    padding-right: 20%;
+}
+
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: transparent
+}
+
+#main-img {
+    width: 70%;
+    margin-left: 2em;
+}
+
+.row {
+    padding-top: 1em;
+}
+

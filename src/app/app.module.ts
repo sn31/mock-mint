@@ -19,6 +19,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { masterFirebaseConfig } from './api-keys';
 import { PrivateComponent } from './private/private.component';
+import { PrivatenavComponent } from './privatenav/privatenav.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -38,7 +39,9 @@ export const firebaseConfig = {
     HomepageComponent,
     LoginComponent,
   
-    PrivateComponent
+    PrivateComponent,
+  
+    PrivatenavComponent
   ],
   imports: [
     BrowserModule,
