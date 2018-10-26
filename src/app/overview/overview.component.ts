@@ -18,6 +18,6 @@ export class OverviewComponent implements OnInit {
   year: number = this.currentTime.getFullYear();
   
   newAccount = new Account(
-    10000,10000,-40000,135000,35000
+    '100000','10000','-40000','135000','35000'
   )
 }

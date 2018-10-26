@@ -1,3 +1,3 @@
 export class Account{
-    constructor(public cash: number, public cc: number, public loans: number, public investments: number, public property: number){};
+    constructor(public cash: string, public cc: string, public loans: string, public investments: string, public property: string){};
 }
