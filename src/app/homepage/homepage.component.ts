@@ -1,13 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import {Panel} from '../models/panel-model';
+
+
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.css']
+  styleUrls: ['./homepage.component.css'],
+ 
 })
-export class HomepageComponent implements OnInit {
 
-  constructor() { }
+export class HomepageComponent implements OnInit {
+  
+  
 
   ngOnInit() {
   }
