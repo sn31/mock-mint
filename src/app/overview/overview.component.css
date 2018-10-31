@@ -23,3 +23,11 @@ img {
 .col {
     padding-left: 0;
 }
+
+.iconsLeft{
+    padding-left: 0;
+}
+
+.iconsLeft img {
+    margin-left: 0;
+}
