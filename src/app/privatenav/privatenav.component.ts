@@ -36,14 +36,14 @@ export class PrivatenavComponent implements OnInit {
     new Section('tour','')
   ];
   subsections: Section[] = [
-    new Section('overview',''),
-    new Section('transactions',''),
-    new Section('credit score',''),
-    new Section('bills',''),
-    new Section('budgets',''),
-    new Section('goals',''),
-    new Section('trends',''),
-    new Section('investments',''),
-    new Section('ways to save',''),
+    new Section('overview','overview'),
+    new Section('transactions','transactions'),
+    new Section('credit score','credits'),
+    new Section('bills','bills'),
+    new Section('budgets','budgets'),
+    new Section('goals','goals'),
+    new Section('trends','trends'),
+    new Section('investments','investments'),
+    new Section('ways to save','savings'),
   ];
 }

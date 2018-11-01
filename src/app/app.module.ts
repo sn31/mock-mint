@@ -21,6 +21,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { PrivateComponent } from './private/private.component';
 import { PrivatenavComponent } from './privatenav/privatenav.component';
 import { OverviewComponent } from './overview/overview.component';
+import { TransactionComponent } from './transaction/transaction.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -44,7 +45,9 @@ export const firebaseConfig = {
   
     PrivatenavComponent,
   
-    OverviewComponent
+    OverviewComponent,
+  
+    TransactionComponent
   ],
   imports: [
     BrowserModule,
