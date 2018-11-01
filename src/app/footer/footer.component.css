@@ -19,6 +19,9 @@ hr {
 .small-text {
   font-size: 0.8em;
 }
+.small-text span{
+  margin-right: 1em;
+}
 
 .footer-info {
   margin-bottom: 2em;
