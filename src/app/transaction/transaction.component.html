@@ -1,7 +1,17 @@
 <h2>Transactions</h2>
-
-<div *ngFor="let transaction of transactions | async" (click)="goToDetailPage(transaction)" class="panel panel-default">
-  <div class="panel-body">
-    <h3><em>{{transaction.Amount}}</em> by {{transaction.Category}}</h3>
-  </div>
+<div class="row">
+  <div class="col">Date</div>
+  <div class="col">Amount</div>
+  <div class="col">Category</div>
+  <div class="col">Account</div>
+  <div class="col">Description</div>
+  <div class="col">Type</div>
+</div>
+<div class="row" *ngFor="let transaction of transactions | async" (click)="goToDetailPage(transaction)">
+  <div class="col">{{transaction.Date}}</div>
+  <div class="col">{{transaction.Amount}}</div>
+  <div class="col">{{transaction.Category}}</div>
+  <div class="col">{{transaction.Account}}</div>
+  <div class="col">{{transaction.Description}}</div>
+  <div class="col">{{transaction.Type}}</div>
 </div>
