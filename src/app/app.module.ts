@@ -10,7 +10,7 @@ import { PanelComponent } from './panel/panel.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { routing } from './app.routing';
-import { LoginComponent } from './login/login.component';
+
 
 import { HttpModule } from '@angular/http';
 
@@ -39,7 +39,7 @@ export const firebaseConfig = {
     PanelComponent,
     FooterComponent,
     HomepageComponent,
-    LoginComponent,
+ 
   
     PrivateComponent,
   
