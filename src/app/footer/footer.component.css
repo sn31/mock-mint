@@ -3,7 +3,7 @@
   margin-bottom: 1em;
 }
 .footer-info img {
-  height: 3vh;
+  height: 4vh;
   margin-bottom: 0.5em;
 }
 .footer {
@@ -31,4 +31,9 @@ hr {
 }
 .row {
   margin-right: 0;
+}
+
+.icons-row {
+  text-align: center;
+  padding-bottom: 1em;
 }
