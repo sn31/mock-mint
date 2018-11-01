@@ -1,17 +1,45 @@
-<h2>Transactions</h2>
 <div class="row">
-  <div class="col">Date</div>
-  <div class="col">Amount</div>
-  <div class="col">Category</div>
-  <div class="col">Account</div>
-  <div class="col">Description</div>
-  <div class="col">Type</div>
-</div>
-<div class="row" *ngFor="let transaction of transactions | async" (click)="goToDetailPage(transaction)">
-  <div class="col">{{transaction.Date}}</div>
-  <div class="col">{{transaction.Amount}}</div>
-  <div class="col">{{transaction.Category}}</div>
-  <div class="col">{{transaction.Account}}</div>
-  <div class="col">{{transaction.Description}}</div>
-  <div class="col">{{transaction.Type}}</div>
+  <div class="col-md-4">
+      <div class="card">
+          <div class="card-header">
+           Types
+          </div>
+          <div class="card-body">
+            
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+             Accounts
+            </div>
+            <div class="card-body">
+              
+            </div>
+          </div>
+  </div>
+  <div class="col-md-8">
+      <div class="card">
+          <div class="card-header">
+            Transactions
+          </div>
+          <div class="card-body">
+              <div class="row">
+                  <div class="col">Date</div>
+                  <div class="col">Amount</div>
+                  <div class="col">Category</div>
+                  <div class="col">Account</div>
+                  <div class="col">Description</div>
+                  <div class="col">Type</div>
+                </div>
+                <div class="row" *ngFor="let transaction of transactions | async" (click)="goToDetailPage(transaction)">
+                  <div class="col">{{transaction.Date}}</div>
+                  <div class="col">{{transaction.Amount}}</div>
+                  <div class="col">{{transaction.Category}}</div>
+                  <div class="col">{{transaction.Account}}</div>
+                  <div class="col">{{transaction.Description}}</div>
+                  <div class="col">{{transaction.Type}}</div>
+                </div>
+          </div>
+        </div>
+    </div>
 </div>
