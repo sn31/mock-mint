@@ -3,22 +3,29 @@
     <div class="col-md-2">
       <img id="main-img" width="300" alt="Angular Logo" src="../assets/img/mint_2018_logo.png">
     </div>
-    <div class="col-md-10">
+    <div class="col-md-8">
       <nav class="topnav" routerLinkActive="active">
         <a class="nav-link" href="https://www.mint.com/how-mint-works">HOW IT WORKS</a>
         <a class="nav-link" href="https://www.mint.com/credit-cards?utm_medium=direct&utm_source=w2s">FIND SAVINGS</a>
         <a class="nav-link" href="https://help.mint.com/">SUPPORT</a>
         <a class="nav-link" href="https://blog.mint.com/">BLOG</a>
-        <ul class="nav navbar-nav navbar-right">
-          <li *ngIf="isLoggedIn">
-            <a>{{userName}}</a>
-            <a class="nav-link auth" (click)="logout()">LOG OUT</a>
-          </li>
-          <li *ngIf="!isLoggedIn">
-            <a class="nav-link auth" (click)="login()">LOG IN</a>
-          </li>
-        </ul>
       </nav>
+    </div>
+    <div class="col-md-2">
+      <ul class="topnav-list">
+        <li *ngIf="isLoggedIn">
+          <a>{{userName}}</a>
+          <a class="nav-link auth" (click)="logout()">LOG OUT</a>
+        </li>
+        <li *ngIf="!isLoggedIn">
+          <a class="nav-link auth" (click)="login()">LOG IN</a>
+        </li>
+        <li>
+            <a class="nav-link auth">SIGN UP</a>
+        </li>
+        
+      </ul>
+      
     </div>
   </div>
   <div class="main-text-box">
