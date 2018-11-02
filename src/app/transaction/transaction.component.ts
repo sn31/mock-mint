@@ -13,9 +13,15 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class TransactionComponent implements OnInit {
 
   transactions: FirebaseListObservable<any[]>;
+  transactionsObj: Transaction[] = [];
   constructor(private router: Router, private transactionService: TransactionService) {}
   ngOnInit() {
     this.transactions= this.transactionService.getTransactions();
+    this.transactions.forEach(element => {
+      console.log(element);
+      this.transactionsObj.push(new Transaction(element["Account"], element["Amount"],element["Category"], element["Date"],element["Description"], element["Type"]));
+    });
+
   }
 
   goToDetailPage(clickedTransaction) {
