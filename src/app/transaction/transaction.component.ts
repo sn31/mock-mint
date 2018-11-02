@@ -40,12 +40,13 @@ export class TransactionComponent implements OnInit {
   onChange(optionFromMenu) {
     this.sortDirection = optionFromMenu;
   }
-  selectedAccount: String = '';
+  selectedAccount: String = null;
   showAccountTransactions(clickedAccount: String)
   {
     this.selectedAccount = clickedAccount;
   }
   getSelectedAccount() {
+    console.log(this.selectedAccount);
     return this.selectedAccount;
   }
 }

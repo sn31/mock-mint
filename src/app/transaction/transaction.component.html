@@ -19,7 +19,7 @@
       </div>
       <div class="card-body">
         <ul>
-          <li *ngFor="let account of totalAccounts" (click)="showAccountTransactions('')">{{account}}</li>
+          <li *ngFor="let account of totalAccounts" (click)="showAccountTransactions(account)">{{account}}</li>
         </ul>
       </div>
     </div>
