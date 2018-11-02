@@ -74,7 +74,6 @@ export const masterFirebaseConfig = {
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,
@@ -88,8 +87,23 @@ export const firebaseConfig = {
 ``
 AngularFireModule.initializeApp(firebaseConfig),
 AngularFireDatabaseModule
+``
+
+- Build the application before deploying:
 
 ``
+ng build --env=prod
+``
+
+- Install Firebase-tools and deploying:
+
+``
+npm install -g firebase-tools
+firebase login
+firebase init
+firebase deploy
+``
+
 ## Support and contact details
 
 Please contact us at skye@dames.es for more information and/or feedback.
