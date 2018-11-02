@@ -40,14 +40,56 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-### Running unit tests
+### Firebase Setup and Deployment
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Create a Firebase account.
+- Create a Firebase project.
+- In the Overview area, select the "Add Firebase to your web app" option to collect your API information.
+- Install AngularFire and Firebase using npm:
 
-### Running end-to-end tests
+``
+npm install angularfire2@4.0.0-rc.0 firebase@^3.6.6 --save
+``
+- Add this line to your tsconfig.json at the very end to mention Firebase:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+``
+"type":["firebase"]
+``
+- Create a new file called api-keys.ts in the src/app directory. Then place our Firebase credentials (the information Firebase provided in that modal window), like this:
 
+``
+export const masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+  };
+``
+
+- Add /src/app/api-keys.ts to .gitignore.
+- In src/app/app.module.ts, import and export the following:
+
+``
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
+``
+
+- Add these to the import array in your app.module.ts:
+
+``
+AngularFireModule.initializeApp(firebaseConfig),
+AngularFireDatabaseModule
+
+``
 ## Support and contact details
 
 Please contact us at skye@dames.es for more information and/or feedback.
