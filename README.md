@@ -14,17 +14,6 @@ The goal of this project is to rebuil a website using Angular with the following
 
 The website should includes a landing page, an authentication page and a main page where the user can manage their financials.
 
-### Week 1 Goals
-
-- Create home page
-
-- Create authentication component
-
-### Week 2 Goals
-
-- Finish adding features
-- Use Firebase database
-
 ### Specifications
 
 - The user should be able to sign up for a new account.
@@ -35,10 +24,11 @@ The website should includes a landing page, an authentication page and a main pa
 
 ### Completed Features
 
-- Home page
-- Private Overview Page
+- The public page is available to everyone.
+- The private page is only visible to authenticated users only using an authentication guard.
 - User authentication using Firebase Google Auth.
-- Public and Private routes are protected with Redirect.
+- Transactional data is pulled from Firebase and can be sorted using various pipes.
+- The website is deloyed to Firebase at http://mock-mint.firebaseapp.com.
 
 ## Setup/Installation Requirements
 
