@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-2">
       <div class="card">
           <div class="card-header">
            Types
@@ -18,11 +18,13 @@
              Accounts
             </div>
             <div class="card-body">
-              
+              <ul>
+                <li *ngFor="let account of totalAccounts">{{account}}</li>
+              </ul>
             </div>
           </div>
   </div>
-  <div class="col-md-8">
+  <div class="col-md-10">
       <div class="card">
           <div class="card-header">
             Transactions

@@ -20,7 +20,7 @@ import { OverviewComponent } from './overview/overview.component';
 import { TransactionComponent } from './transaction/transaction.component';
 import {AuthGuard} from './services/auth-guard.service.service';
 import {AuthenticationService} from './services/authentication.service';
-import {PricePipe} from './pipes/pipe';
+import {PricePipe} from './pipes/price.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
