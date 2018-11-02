@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Transaction } from "../models/transation-model";
 import { Router } from "@angular/router";
-import { TransactionService } from "../transaction.service";
+import { TransactionService } from "../services/transaction.service";
 import { FirebaseListObservable } from "angularfire2/database";
 
 @Component({

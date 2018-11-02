@@ -39,14 +39,9 @@ export const firebaseConfig = {
     PanelComponent,
     FooterComponent,
     HomepageComponent,
- 
-  
     PrivateComponent,
-  
     PrivatenavComponent,
-  
     OverviewComponent,
-  
     TransactionComponent
   ],
   imports: [
