@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Transaction } from '../app/models/transation-model';
+import { Transaction } from '../../app/models/transation-model';
 import {AngularFireDatabase, FirebaseListObservable} from 'angularfire2/database';
 
 @Injectable()

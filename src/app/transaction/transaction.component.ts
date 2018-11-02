@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Transaction } from "../models/transation-model";
-import { Router } from "@angular/router";
-import { TransactionService } from "../services/transaction.service";
-import { FirebaseListObservable } from "angularfire2/database";
+import { Transaction } from '../models/transation-model';
+import { Router } from '@angular/router';
+import { TransactionService } from '../services/transaction.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-transaction',

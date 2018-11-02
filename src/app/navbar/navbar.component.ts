@@ -23,7 +23,7 @@ export class NavbarComponent implements OnInit {
     this.authService.user.subscribe(user=>{
       if (user === null){
         this.isLoggedIn = false;
-        this.router.navigate(['']);
+        // this.router.navigate(['']);
       }
       else {
         this.isLoggedIn = true;

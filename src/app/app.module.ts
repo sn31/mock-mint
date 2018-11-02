@@ -22,6 +22,8 @@ import { PrivateComponent } from './private/private.component';
 import { PrivatenavComponent } from './privatenav/privatenav.component';
 import { OverviewComponent } from './overview/overview.component';
 import { TransactionComponent } from './transaction/transaction.component';
+import {AuthGuard} from './services/auth-guard.service.service';
+import {AuthenticationService} from './services/authentication.service';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -52,7 +54,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule,
   ],
-  providers: [],
+  providers: [AuthGuard, AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
