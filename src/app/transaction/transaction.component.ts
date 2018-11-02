@@ -18,11 +18,13 @@ export class TransactionComponent implements OnInit {
   ngOnInit() {
     this.transactions= this.transactionService.getTransactions();
     this.transactions.forEach(element => {
-      console.log(element);
-      this.transactionsObj.push(new Transaction(element["Account"], element["Amount"],element["Category"], element["Date"],element["Description"], element["Type"]));
+      element.forEach(subElement=>{
+        this.transactionsObj.push(new Transaction(subElement["Account"], subElement["Amount"],subElement["Category"], subElement["Date"],subElement["Description"], subElement["Type"]));
+      })
     });
-
+    console.log(this.transactionsObj);
   }
+  
 
   goToDetailPage(clickedTransaction) {
     this.router.navigate(['transactions', clickedTransaction.$key]);
