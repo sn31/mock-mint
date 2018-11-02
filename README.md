@@ -55,33 +55,30 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 - Create a new file called api-keys.ts in the src/app directory. Then place our Firebase credentials (the information Firebase provided in that modal window), like this:
 
-`export const masterFirebaseConfig = { apiKey: "xxxx", authDomain: "xxxx.firebaseapp.com", databaseURL: "https://xxxx.firebaseio.com", storageBucket: "xxxx.appspot.com", messagingSenderId: "xxxx" };`
+> export const masterFirebaseConfig = { 
+> apiKey: "xxxx", authDomain: "xxxx.firebaseapp.com", 
+> databaseURL: "https://xxxx.firebaseio.com", 
+> storageBucket: "xxxx.appspot.com", messagingSenderId: "xxxx" };
 
 - Add /src/app/api-keys.ts to .gitignore.
 - In src/app/app.module.ts, import and export the following:
 
-``
+`` import { masterFirebaseConfig } from './api-keys';``
+`` import { AngularFireModule } from 'angularfire2';``
+``import { AngularFireDatabaseModule } from 'angularfire2/database';``
 
-- import { masterFirebaseConfig } from './api-keys';
-- import { AngularFireModule } from 'angularfire2';
-- import { AngularFireDatabaseModule } from 'angularfire2/database';
-- export const firebaseConfig = {
-
-  - apiKey: masterFirebaseConfig.apiKey,
-  - authDomain: masterFirebaseConfig.authDomain,
-  - databaseURL: masterFirebaseConfig.databaseURL,
-  - storageBucket: masterFirebaseConfig.storageBucket
-    };
-    ``
+> export const firebaseConfig = {
+  > apiKey: masterFirebaseConfig.apiKey,
+  > authDomain: masterFirebaseConfig.authDomain,
+  > databaseURL: masterFirebaseConfig.databaseURL,
+  > storageBucket: masterFirebaseConfig.storageBucket
+    >};
 
 - Add these to the import array in your app.module.ts:
 
 ``
-
-- AngularFireModule.initializeApp(firebaseConfig),
-
-- AngularFireDatabaseModule
-
+AngularFireModule.initializeApp(firebaseConfig),
+AngularFireDatabaseModule
 ``
 
 - Build the application before deploying:
@@ -90,16 +87,13 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 - Install Firebase-tools and deploying:
 
-``
-npm install -g firebase-tools
+``npm install -g firebase-tools``
 
-firebase login
+``firebase login``
 
-firebase init
+``firebase init``
 
-firebase deploy
-
-``
+``firebase deploy``
 
 ## Support and contact details
 
