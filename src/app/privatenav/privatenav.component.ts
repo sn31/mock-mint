@@ -30,10 +30,10 @@ export class PrivatenavComponent implements OnInit {
     this.authService.logout();
   }
   sections: Section[] = [
-    new Section('add accounts',''),
-    new Section('settings',''),
-    new Section('profile',''),
-    new Section('tour','')
+    new Section('add accounts','https://mint.intuit.com/addprovider.event'),
+    new Section('settings','https://mint.intuit.com/settings.event?filter=all'),
+    new Section('profile','https://mint.intuit.com/settings.event?filter=profile'),
+    new Section('tour','https://mint.intuit.com/overview.event')
   ];
   subsections: Section[] = [
     new Section('overview','overview'),
