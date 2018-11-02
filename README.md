@@ -47,61 +47,58 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 - In the Overview area, select the "Add Firebase to your web app" option to collect your API information.
 - Install AngularFire and Firebase using npm:
 
-``
-npm install angularfire2@4.0.0-rc.0 firebase@^3.6.6 --save
-``
+`npm install angularfire2@4.0.0-rc.0 firebase@^3.6.6 --save`
+
 - Add this line to your tsconfig.json at the very end to mention Firebase:
 
-``
-"type":["firebase"]
-``
+`"type":["firebase"]`
+
 - Create a new file called api-keys.ts in the src/app directory. Then place our Firebase credentials (the information Firebase provided in that modal window), like this:
 
-``
-export const masterFirebaseConfig = {
-    apiKey: "xxxx",
-    authDomain: "xxxx.firebaseapp.com",
-    databaseURL: "https://xxxx.firebaseio.com",
-    storageBucket: "xxxx.appspot.com",
-    messagingSenderId: "xxxx"
-  };
-``
+`export const masterFirebaseConfig = { apiKey: "xxxx", authDomain: "xxxx.firebaseapp.com", databaseURL: "https://xxxx.firebaseio.com", storageBucket: "xxxx.appspot.com", messagingSenderId: "xxxx" };`
 
 - Add /src/app/api-keys.ts to .gitignore.
 - In src/app/app.module.ts, import and export the following:
 
 ``
-import { masterFirebaseConfig } from './api-keys';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-export const firebaseConfig = {
-  apiKey: masterFirebaseConfig.apiKey,
-  authDomain: masterFirebaseConfig.authDomain,
-  databaseURL: masterFirebaseConfig.databaseURL,
-  storageBucket: masterFirebaseConfig.storageBucket
-};
-``
+
+- import { masterFirebaseConfig } from './api-keys';
+- import { AngularFireModule } from 'angularfire2';
+- import { AngularFireDatabaseModule } from 'angularfire2/database';
+- export const firebaseConfig = {
+
+  - apiKey: masterFirebaseConfig.apiKey,
+  - authDomain: masterFirebaseConfig.authDomain,
+  - databaseURL: masterFirebaseConfig.databaseURL,
+  - storageBucket: masterFirebaseConfig.storageBucket
+    };
+    ``
 
 - Add these to the import array in your app.module.ts:
 
 ``
-AngularFireModule.initializeApp(firebaseConfig),
-AngularFireDatabaseModule
+
+- AngularFireModule.initializeApp(firebaseConfig),
+
+- AngularFireDatabaseModule
+
 ``
 
 - Build the application before deploying:
 
-``
-ng build --env=prod
-``
+`ng build --env=prod`
 
 - Install Firebase-tools and deploying:
 
 ``
 npm install -g firebase-tools
+
 firebase login
+
 firebase init
+
 firebase deploy
+
 ``
 
 ## Support and contact details
@@ -121,6 +118,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - TypeScript
 - JavaScript
 - NodeJs
+- Firebase
 - Homebrew
 - Angular CLI 1.6.5
 - Git
