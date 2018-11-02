@@ -28,7 +28,7 @@ The website should includes a landing page, an authentication page and a main pa
 - The private page is only visible to authenticated users only using an authentication guard.
 - User authentication using Firebase Google Auth.
 - Transactional data is pulled from Firebase and can be sorted using various pipes.
-- The website is deloyed to Firebase at http://mock-mint.firebaseapp.com.
+- The website is deployed to Firebase at http://mock-mint.firebaseapp.com.
 
 ## Setup/Installation Requirements
 
