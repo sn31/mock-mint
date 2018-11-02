@@ -43,7 +43,7 @@
           <div class="col">Description</div>
           <div class="col-xs">Type</div>
         </div>
-        <div class="row" *ngFor="let transaction of transactionsObj | pricepipe:sortDirection | accountpipe:getSelectedAccount()"
+        <div class="row" *ngFor="let transaction of transactionsObj | pricepipe:sortDirection"
           (click)="goToDetailPage(transaction)">
           <div class="col">{{transaction.date}}</div>
           <div class="col">{{transaction.amount}}
