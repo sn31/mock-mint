@@ -21,6 +21,7 @@ import { TransactionComponent } from './transaction/transaction.component';
 import {AuthGuard} from './services/auth-guard.service.service';
 import {AuthenticationService} from './services/authentication.service';
 import {PricePipe} from './pipes/price.pipe';
+import {AccountPipe} from './pipes/account.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -42,7 +43,8 @@ export const firebaseConfig = {
     PrivatenavComponent,
     OverviewComponent,
     TransactionComponent,
-    PricePipe
+    PricePipe,
+    AccountPipe
   ],
   imports: [
     BrowserModule,

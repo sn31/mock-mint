@@ -1,58 +1,59 @@
 <div class="row">
   <div class="col-md-2">
-      <div class="card">
-          <div class="card-header">
-           Types
-          </div>
-          <div class="card-body">
-           <ul>
-             <li>Cash and Credit</li>
-             <li>Investment</li>
-             <li>Cash Only</li>
-             <li>Loan</li>
-           </ul> 
-          </div>
-        </div>
-        <div class="card">
-            <div class="card-header">
-             Accounts
-            </div>
-            <div class="card-body">
-              <ul>
-                <li *ngFor="let account of totalAccounts">{{account}}</li>
-              </ul>
-            </div>
-          </div>
+    <div class="card">
+      <div class="card-header">
+        Types
+      </div>
+      <div class="card-body">
+        <ul>
+          <li>Cash and Credit</li>
+          <li>Investment</li>
+          <li>Cash Only</li>
+          <li>Loan</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        Accounts
+      </div>
+      <div class="card-body">
+        <ul>
+          <li *ngFor="let account of totalAccounts" (click)="showAccountTransactions('')">{{account}}</li>
+        </ul>
+      </div>
+    </div>
   </div>
   <div class="col-md-10">
-      <div class="card">
-          <div class="card-header">
-            Transactions
+    <div class="card">
+      <div class="card-header">
+        Transactions
+      </div>
+      <div class="card-body">
+        <div class="row card-header">
+          <div class="col">Date</div>
+          <div class="col">Amount
+            <select (change)="onChange($event.target.value)">
+              <option value="ascending">ASC</option>
+              <option value="descending">DSC</option>
+            </select>
           </div>
-          <div class="card-body">
-              <div class="row card-header">
-                  <div class="col">Date</div>
-                  <div class="col">Amount
-                    <select (change)="onChange($event.target.value)">
-                      <option value="ascending">ASC</option>
-                      <option value="descending">DSC</option>
-                    </select>
-                  </div>
-                  <div class="col">Category</div>
-                  <div class="col">Account</div>
-                  <div class="col">Description</div>
-                  <div class="col-xs">Type</div>
-                </div>
-                <div class="row" *ngFor="let transaction of transactionsObj | pricepipe:sortDirection" (click)="goToDetailPage(transaction)">
-                  <div class="col">{{transaction.date}}</div>
-                  <div class="col">{{transaction.amount}}
-                  </div>
-                  <div class="col">{{transaction.category}}</div>
-                  <div class="col">{{transaction.account}}</div>
-                  <div class="col">{{transaction.description}}</div>
-                  <div class="col-xs">{{transaction.type}}</div>
-                </div>
-          </div>
+          <div class="col">Category</div>
+          <div class="col">Account</div>
+          <div class="col">Description</div>
+          <div class="col-xs">Type</div>
         </div>
+        <div class="row" *ngFor="let transaction of transactionsObj | pricepipe:sortDirection | accountpipe:getSelectedAccount()"
+          (click)="goToDetailPage(transaction)">
+          <div class="col">{{transaction.date}}</div>
+          <div class="col">{{transaction.amount}}
+          </div>
+          <div class="col">{{transaction.category}}</div>
+          <div class="col">{{transaction.account}}</div>
+          <div class="col">{{transaction.description}}</div>
+          <div class="col-xs">{{transaction.type}}</div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>

@@ -28,7 +28,6 @@ export class TransactionComponent implements OnInit {
           this.totalAccounts.push(subElement["Account"]);
         }
       })
-      console.log(this.totalAccounts);
     });
   }
   
@@ -41,9 +40,14 @@ export class TransactionComponent implements OnInit {
   onChange(optionFromMenu) {
     this.sortDirection = optionFromMenu;
   }
-
-  
-
+  selectedAccount: String = '';
+  showAccountTransactions(clickedAccount: String)
+  {
+    this.selectedAccount = clickedAccount;
+  }
+  getSelectedAccount() {
+    return this.selectedAccount;
+  }
 }
 
 
