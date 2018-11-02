@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { TransactionService } from '../services/transaction.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
+
 @Component({
   selector: 'app-transaction',
   templateUrl: './transaction.component.html',
@@ -29,6 +30,11 @@ export class TransactionComponent implements OnInit {
   goToDetailPage(clickedTransaction) {
     this.router.navigate(['transactions', clickedTransaction.$key]);
   };
+
+  sortDirection: string = "ascending";
+  onChange(optionFromMenu) {
+    this.sortDirection = optionFromMenu;
+  }
 
 }
 

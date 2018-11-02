@@ -4,16 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {NgxPageScrollModule} from 'ngx-page-scroll';
-
 import { HighlightComponent } from './highlight/highlight.component';
 import { PanelComponent } from './panel/panel.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { routing } from './app.routing';
-
-
 import { HttpModule } from '@angular/http';
-
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
@@ -24,6 +20,7 @@ import { OverviewComponent } from './overview/overview.component';
 import { TransactionComponent } from './transaction/transaction.component';
 import {AuthGuard} from './services/auth-guard.service.service';
 import {AuthenticationService} from './services/authentication.service';
+import {PricePipe} from './pipes/pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -44,7 +41,8 @@ export const firebaseConfig = {
     PrivateComponent,
     PrivatenavComponent,
     OverviewComponent,
-    TransactionComponent
+    TransactionComponent,
+    PricePipe
   ],
   imports: [
     BrowserModule,

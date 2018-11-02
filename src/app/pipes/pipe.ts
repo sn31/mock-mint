@@ -2,10 +2,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { Transaction } from '../models/transation-model';
 
 @Pipe({
-  name: "price",
+  name: "pricepipe",
   pure: false //stateful
 })
-export class Price implements PipeTransform {
+export class PricePipe implements PipeTransform {
   transform(input: Transaction[], sortDirection) {
    
       input.sort(function(a: Transaction, b: Transaction) {
