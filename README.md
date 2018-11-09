@@ -68,11 +68,12 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ``import { AngularFireDatabaseModule } from 'angularfire2/database';``
 
 > export const firebaseConfig = {
-  > apiKey: masterFirebaseConfig.apiKey,
-  > authDomain: masterFirebaseConfig.authDomain,
-  > databaseURL: masterFirebaseConfig.databaseURL,
-  > storageBucket: masterFirebaseConfig.storageBucket
-    >};
+   > apiKey: "AIzaSyCsXeeqQGEXp7WQAB7WU4blJmS0rCIAZaU",
+   > authDomain: "makeup-genius-702f9.firebaseapp.com",
+   > databaseURL: "https://makeup-genius-702f9.firebaseio.com",
+   > projectId: "makeup-genius-702f9",
+   > storageBucket: "makeup-genius-702f9.appspot.com",
+   > messagingSenderId: "416277350179"
 
 - Add these to the import array in your app.module.ts:
 
