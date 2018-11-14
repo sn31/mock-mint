@@ -1,10 +1,12 @@
 <div class="container-fluid">
         <div *ngIf="isLoggedIn">
                 <app-navbar></app-navbar>
+                <app-homepage></app-homepage>
         </div>
         <div *ngIf="!isLoggedIn">
                         <app-privatenav></app-privatenav>
+                        <router-outlet></router-outlet>
                 </div>
-        <router-outlet></router-outlet>
+        
         <app-footer></app-footer>
 </div>

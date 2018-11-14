@@ -6,10 +6,7 @@ import { TransactionComponent } from '../app/transaction/transaction.component';
 import {OverviewComponent} from '../app/overview/overview.component';
 import {AuthGuard} from './services/auth-guard.service.service';
 const appRoutes: Routes = [
-    {
-      path: '',
-      component: HomepageComponent //public component
-    },
+    
     {
         path: 'private',
         component: PrivateComponent,
