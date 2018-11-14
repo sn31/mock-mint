@@ -28,7 +28,7 @@ The website should includes a landing page, an authentication page and a main pa
 - The private page is only visible to authenticated users only using an authentication guard.
 - User authentication using Firebase Google Auth.
 - Transactional data is pulled from Firebase and can be sorted using various pipes.
-- The website is deloyed to Firebase at http://mock-mint.firebaseapp.com.
+- The website is deployed to Firebase at http://mock-mint.firebaseapp.com.
 
 ## Setup/Installation Requirements
 
@@ -68,11 +68,12 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ``import { AngularFireDatabaseModule } from 'angularfire2/database';``
 
 > export const firebaseConfig = {
-  > apiKey: masterFirebaseConfig.apiKey,
-  > authDomain: masterFirebaseConfig.authDomain,
-  > databaseURL: masterFirebaseConfig.databaseURL,
-  > storageBucket: masterFirebaseConfig.storageBucket
-    >};
+   > apiKey: "AIzaSyCsXeeqQGEXp7WQAB7WU4blJmS0rCIAZaU",
+   > authDomain: "makeup-genius-702f9.firebaseapp.com",
+   > databaseURL: "https://makeup-genius-702f9.firebaseio.com",
+   > projectId: "makeup-genius-702f9",
+   > storageBucket: "makeup-genius-702f9.appspot.com",
+   > messagingSenderId: "416277350179"
 
 - Add these to the import array in your app.module.ts:
 
